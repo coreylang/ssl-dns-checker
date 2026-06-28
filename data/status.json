@@ -1,26 +1,285 @@
 {
   "schema": 1,
-  "generatedAt": "2026-06-28T14:55:00.000Z",
-  "durationMs": 2814,
-  "summary": { "critical": 1, "warn": 1, "ok": 1, "unknown": 0 },
+  "generatedAt": "2026-06-28T17:44:57.762Z",
+  "durationMs": 643,
+  "summary": {
+    "critical": 0,
+    "warn": 2,
+    "ok": 1,
+    "unknown": 0
+  },
   "targets": [
     {
-      "id": "legacy-app", "label": "Legacy App", "domain": "legacy-app.example", "worst": "critical",
-      "ssl": { "level": "critical", "message": "Certificate expired 2d ago", "validTo": "2026-06-26T00:00:00Z", "daysRemaining": -2, "issuer": "Let's Encrypt", "authorized": false, "authorizationError": "CERT_HAS_EXPIRED", "altNames": ["legacy-app.example"] },
-      "domain_": { "level": "critical", "message": "Domain lapsed: redemptionPeriod", "expiry": "2026-06-10T00:00:00Z", "daysRemaining": -18, "registrar": "Namecheap, Inc.", "statuses": ["redemptionPeriod"], "source": "rdap" },
-      "dns": { "level": "ok", "message": "Stable since last check", "recordHash": "abc123", "records": { "A": ["203.0.113.10"], "NS": ["ns1.example.net", "ns2.example.net"] }, "comparedTo": "previous", "drift": [] }
+      "id": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "domain": "thestatus.dev",
+      "worst": "warn",
+      "ssl": {
+        "kind": "ssl",
+        "level": "ok",
+        "message": "Valid for 53d",
+        "checkedAt": "2026-06-28T17:44:57.119Z",
+        "validTo": "2026-08-20T20:19:08.000Z",
+        "daysRemaining": 53,
+        "issuer": "Google Trust Services",
+        "authorized": true,
+        "authorizationError": null,
+        "altNames": [
+          "thestatus.dev"
+        ]
+      },
+      "domain_": {
+        "kind": "domain",
+        "level": "ok",
+        "message": "Renews in 72d",
+        "checkedAt": "2026-06-28T17:44:57.153Z",
+        "expiry": "2026-09-09T03:54:41.907Z",
+        "daysRemaining": 72,
+        "registrar": "GoDaddy.com, LLC",
+        "statuses": [
+          "client delete prohibited",
+          "client renew prohibited",
+          "client transfer prohibited",
+          "client update prohibited"
+        ],
+        "source": "rdap"
+      },
+      "dns": {
+        "kind": "dns",
+        "level": "warn",
+        "message": "Records changed since last check (13 changes)",
+        "checkedAt": "2026-06-28T17:44:57.176Z",
+        "recordHash": "4dd64a07067a8ddd",
+        "records": {
+          "AAAA": [
+            "2606:4700:3034::6815:1040",
+            "2606:4700:3034::ac43:a6b6"
+          ],
+          "A": [
+            "104.21.16.64",
+            "172.67.166.182"
+          ],
+          "NS": [
+            "nancy.ns.cloudflare.com",
+            "vicky.ns.cloudflare.com"
+          ],
+          "TXT": [
+            "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
+            "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
+            "v=spf1 include:dnsexit.com ~all"
+          ],
+          "MX": [
+            "0 mail.dnsexit.com",
+            "10 mail2.dnsexit.com"
+          ]
+        },
+        "comparedTo": "previous",
+        "drift": [
+          "+ A 104.21.16.64",
+          "+ A 172.67.166.182",
+          "- A 75.2.60.5",
+          "+ AAAA 2606:4700:3034::6815:1040",
+          "+ AAAA 2606:4700:3034::ac43:a6b6",
+          "+ MX 0 mail.dnsexit.com",
+          "+ MX 10 mail2.dnsexit.com",
+          "- MX 10 mail.thestatus.dev",
+          "+ NS nancy.ns.cloudflare.com",
+          "+ NS vicky.ns.cloudflare.com",
+          "+ TXT google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
+          "+ TXT google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
+          "+ TXT v=spf1 include:dnsexit.com ~all"
+        ]
+      }
     },
     {
-      "id": "thestatus-dev", "label": "TheStatus.dev", "domain": "thestatus.dev", "worst": "warn",
-      "ssl": { "level": "warn", "message": "Valid for 22d", "validTo": "2026-07-20T00:00:00Z", "daysRemaining": 22, "issuer": "Google Trust Services", "authorized": true, "authorizationError": null, "altNames": ["thestatus.dev", "*.thestatus.dev"] },
-      "domain_": { "level": "ok", "message": "Renews in 72d", "expiry": "2026-09-08T00:00:00Z", "daysRemaining": 72, "registrar": "GoDaddy.com, LLC", "statuses": ["clientTransferProhibited"], "source": "rdap" },
-      "dns": { "level": "warn", "message": "Records changed since last check (2 changes)", "recordHash": "def456", "records": { "A": ["75.2.60.5"], "MX": ["10 mail.thestatus.dev"] }, "comparedTo": "previous", "drift": ["+ A 75.2.60.5", "- A 76.76.21.21"] }
+      "id": "github",
+      "label": "GitHub",
+      "domain": "github.com",
+      "worst": "warn",
+      "ssl": {
+        "kind": "ssl",
+        "level": "ok",
+        "message": "Valid for 35d",
+        "checkedAt": "2026-06-28T17:44:57.434Z",
+        "validTo": "2026-08-02T23:59:59.000Z",
+        "daysRemaining": 35,
+        "issuer": "Sectigo Limited",
+        "authorized": true,
+        "authorizationError": null,
+        "altNames": [
+          "github.com",
+          "www.github.com"
+        ]
+      },
+      "domain_": {
+        "kind": "domain",
+        "level": "ok",
+        "message": "Renews in 103d",
+        "checkedAt": "2026-06-28T17:44:57.435Z",
+        "expiry": "2026-10-09T18:20:50.000Z",
+        "daysRemaining": 103,
+        "registrar": "MarkMonitor Inc.",
+        "statuses": [
+          "client delete prohibited",
+          "client transfer prohibited",
+          "client update prohibited"
+        ],
+        "source": "rdap"
+      },
+      "dns": {
+        "kind": "dns",
+        "level": "warn",
+        "message": "Records changed since last check (29 changes)",
+        "checkedAt": "2026-06-28T17:44:57.435Z",
+        "recordHash": "b53e9923a55d0513",
+        "records": {
+          "A": [
+            "140.82.112.3"
+          ],
+          "NS": [
+            "dns1.p08.nsone.net",
+            "dns2.p08.nsone.net",
+            "dns3.p08.nsone.net",
+            "dns4.p08.nsone.net",
+            "ns-1283.awsdns-32.org",
+            "ns-1707.awsdns-21.co.uk",
+            "ns-421.awsdns-52.com",
+            "ns-520.awsdns-01.net"
+          ],
+          "MX": [
+            "0 github-com.mail.protection.outlook.com"
+          ],
+          "TXT": [
+            "00Dd0000000hHE0=1TBKg000000TN2r",
+            "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805",
+            "MS=ms44452932",
+            "MS=ms58704441",
+            "TAILSCALE-xOzoDvFUzZr5YYVCQFuD",
+            "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b",
+            "anthropic-domain-verification-4az7qn=if8YWuRRqwLycGJDooumzHtxm",
+            "apple-domain-verification=RyQhdzTl6Z6x8ZP4",
+            "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8",
+            "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP",
+            "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd",
+            "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50",
+            "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks",
+            "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o",
+            "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ",
+            "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE",
+            "loom-site-verification=f3787154f1154b7880e720a511ea664d",
+            "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9",
+            "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
+            "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
+            "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+          ]
+        },
+        "comparedTo": "previous",
+        "drift": [
+          "+ MX 0 github-com.mail.protection.outlook.com",
+          "- MX 1 aspmx.l.google.com",
+          "+ NS dns2.p08.nsone.net",
+          "+ NS dns3.p08.nsone.net",
+          "+ NS dns4.p08.nsone.net",
+          "+ NS ns-1283.awsdns-32.org",
+          "+ NS ns-1707.awsdns-21.co.uk",
+          "+ NS ns-421.awsdns-52.com",
+          "+ TXT 00Dd0000000hHE0=1TBKg000000TN2r",
+          "+ TXT MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805",
+          "+ TXT MS=ms44452932",
+          "+ TXT MS=ms58704441",
+          "+ TXT TAILSCALE-xOzoDvFUzZr5YYVCQFuD",
+          "+ TXT adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b",
+          "+ TXT anthropic-domain-verification-4az7qn=if8YWuRRqwLycGJDooumzHtxm",
+          "+ TXT apple-domain-verification=RyQhdzTl6Z6x8ZP4",
+          "+ TXT atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8",
+          "+ TXT calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP",
+          "+ TXT docusign=087098e3-3d46-47b7-9b4e-8a23028154cd",
+          "+ TXT facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50",
+          "+ TXT google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks",
+          "+ TXT google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o",
+          "+ TXT jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ",
+          "+ TXT krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE",
+          "+ TXT loom-site-verification=f3787154f1154b7880e720a511ea664d",
+          "+ TXT miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9",
+          "+ TXT shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
+          "+ TXT stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
+          "+ TXT v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+        ]
+      }
     },
     {
-      "id": "github", "label": "GitHub", "domain": "github.com", "worst": "ok",
-      "ssl": { "level": "ok", "message": "Valid for 41d", "validTo": "2026-08-08T00:00:00Z", "daysRemaining": 41, "issuer": "Sectigo Limited", "authorized": true, "authorizationError": null, "altNames": ["github.com", "*.github.com"] },
-      "domain_": { "level": "ok", "message": "Renews in 103d", "expiry": "2026-10-09T00:00:00Z", "daysRemaining": 103, "registrar": "MarkMonitor Inc.", "statuses": ["clientDeleteProhibited"], "source": "rdap" },
-      "dns": { "level": "ok", "message": "Stable since last check", "recordHash": "ghi789", "records": { "A": ["140.82.112.3"], "MX": ["1 aspmx.l.google.com"], "NS": ["dns1.p08.nsone.net", "ns-520.awsdns-01.net"] }, "comparedTo": "previous", "drift": [] }
+      "id": "cloudflare",
+      "label": "Cloudflare",
+      "domain": "cloudflare.com",
+      "worst": "ok",
+      "ssl": {
+        "kind": "ssl",
+        "level": "ok",
+        "message": "Valid for 41d",
+        "checkedAt": "2026-06-28T17:44:57.656Z",
+        "validTo": "2026-08-08T22:14:02.000Z",
+        "daysRemaining": 41,
+        "issuer": "Google Trust Services",
+        "authorized": true,
+        "authorizationError": null,
+        "altNames": [
+          "cloudflare.com",
+          "ns.cloudflare.com",
+          "*.ns.cloudflare.com",
+          "*.secondary.cloudflare.com",
+          "secondary.cloudflare.com"
+        ]
+      },
+      "domain_": {
+        "kind": "domain",
+        "level": "ok",
+        "message": "Renews in 2426d",
+        "checkedAt": "2026-06-28T17:44:57.657Z",
+        "expiry": "2033-02-17T22:07:54.000Z",
+        "daysRemaining": 2426,
+        "registrar": "Cloudflare, Inc.",
+        "statuses": [
+          "client delete prohibited",
+          "client transfer prohibited",
+          "client update prohibited",
+          "server delete prohibited",
+          "server transfer prohibited",
+          "server update prohibited"
+        ],
+        "source": "rdap"
+      },
+      "dns": {
+        "kind": "dns",
+        "level": "ok",
+        "message": "Baseline captured (4 record types)",
+        "checkedAt": "2026-06-28T17:44:57.657Z",
+        "recordHash": "8bf79b54e9e5451e",
+        "records": {
+          "NS": [
+            "ns3.cloudflare.com",
+            "ns4.cloudflare.com",
+            "ns5.cloudflare.com",
+            "ns6.cloudflare.com",
+            "ns7.cloudflare.com"
+          ],
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
+          ],
+          "AAAA": [
+            "2606:4700::6810:84e5",
+            "2606:4700::6810:85e5"
+          ],
+          "MX": [
+            "10 mxa.global.inbound.cf-emailsecurity.net",
+            "10 mxb.global.inbound.cf-emailsecurity.net",
+            "5 mxa-canary.global.inbound.cf-emailsecurity.net",
+            "5 mxb-canary.global.inbound.cf-emailsecurity.net"
+          ]
+        },
+        "comparedTo": "first-observation",
+        "drift": []
+      }
     }
   ]
 }
