@@ -1,0 +1,22 @@
+{
+  "targets": [
+    {
+      "id": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "domain": "thestatus.dev",
+      "checks": { "ssl": true, "domain": true, "dns": true }
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "domain": "github.com",
+      "checks": { "ssl": true, "domain": true, "dns": true }
+    },
+    {
+      "id": "cloudflare",
+      "label": "Cloudflare",
+      "domain": "cloudflare.com",
+      "dnsTypes": ["A", "AAAA", "NS", "MX"]
+    }
+  ]
+}

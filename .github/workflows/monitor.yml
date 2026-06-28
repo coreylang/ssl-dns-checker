@@ -1,0 +1,118 @@
+name: monitor
+
+# The scheduler + backend. Runs the checks on a cadence (Actions has Node,
+# outbound network, TLS, DNS and RDAP), commits results back to the repo for
+# persistence, then publishes the static dashboard to GitHub Pages.
+
+on:
+  schedule:
+    # Every 6 hours. Expiry data changes slowly; no need to hammer registries.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {} # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "web/**"
+      - "config/**"
+      - ".github/workflows/monitor.yml"
+
+# Allow committing data back and deploying Pages.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+# Never run two checks at once; cancel a queued duplicate but let a running
+# one finish so we don't lose a half-written commit.
+concurrency:
+  group: vigil-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      critical: ${{ steps.run.outputs.critical }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need the prior data/ for DNS drift + alert state. Shallow is fine.
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run checks
+        id: run
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          npm run check
+          code=$?
+          # exit 2 means "critical present" — not a workflow failure.
+          if [ "$code" = "2" ]; then echo "critical=true" >> "$GITHUB_OUTPUT"; code=0; fi
+          exit $code
+
+      - name: Commit results
+        run: |
+          git config user.name "vigil-bot"
+          git config user.email "vigil-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore(data): update watch results [skip ci]"
+            git push
+          fi
+
+      - name: Upload data for deploy
+        uses: actions/upload-artifact@v4
+        with:
+          name: vigil-data
+          path: data/
+          retention-days: 1
+
+  deploy:
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Pull fresh data
+        uses: actions/download-artifact@v4
+        with:
+          name: vigil-data
+          path: web/public/data
+
+      - name: Build dashboard
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

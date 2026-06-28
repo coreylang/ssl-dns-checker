@@ -1,0 +1,32 @@
+{
+  "name": "vigil",
+  "version": "1.0.0",
+  "description": "SSL, domain, and DNS expiry monitor that runs on GitHub Actions and publishes a dashboard to GitHub Pages.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "tsx src/run.ts",
+    "check:once": "tsx src/run.ts --target",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "ssl",
+    "tls",
+    "certificate",
+    "domain",
+    "rdap",
+    "whois",
+    "dns",
+    "expiry",
+    "monitoring",
+    "uptime"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

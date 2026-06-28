@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-06-28T14:55:00.000Z",
+  "durationMs": 2814,
+  "summary": { "critical": 1, "warn": 1, "ok": 1, "unknown": 0 },
+  "targets": [
+    {
+      "id": "legacy-app", "label": "Legacy App", "domain": "legacy-app.example", "worst": "critical",
+      "ssl": { "level": "critical", "message": "Certificate expired 2d ago", "validTo": "2026-06-26T00:00:00Z", "daysRemaining": -2, "issuer": "Let's Encrypt", "authorized": false, "authorizationError": "CERT_HAS_EXPIRED", "altNames": ["legacy-app.example"] },
+      "domain_": { "level": "critical", "message": "Domain lapsed: redemptionPeriod", "expiry": "2026-06-10T00:00:00Z", "daysRemaining": -18, "registrar": "Namecheap, Inc.", "statuses": ["redemptionPeriod"], "source": "rdap" },
+      "dns": { "level": "ok", "message": "Stable since last check", "recordHash": "abc123", "records": { "A": ["203.0.113.10"], "NS": ["ns1.example.net", "ns2.example.net"] }, "comparedTo": "previous", "drift": [] }
+    },
+    {
+      "id": "thestatus-dev", "label": "TheStatus.dev", "domain": "thestatus.dev", "worst": "warn",
+      "ssl": { "level": "warn", "message": "Valid for 22d", "validTo": "2026-07-20T00:00:00Z", "daysRemaining": 22, "issuer": "Google Trust Services", "authorized": true, "authorizationError": null, "altNames": ["thestatus.dev", "*.thestatus.dev"] },
+      "domain_": { "level": "ok", "message": "Renews in 72d", "expiry": "2026-09-08T00:00:00Z", "daysRemaining": 72, "registrar": "GoDaddy.com, LLC", "statuses": ["clientTransferProhibited"], "source": "rdap" },
+      "dns": { "level": "warn", "message": "Records changed since last check (2 changes)", "recordHash": "def456", "records": { "A": ["75.2.60.5"], "MX": ["10 mail.thestatus.dev"] }, "comparedTo": "previous", "drift": ["+ A 75.2.60.5", "- A 76.76.21.21"] }
+    },
+    {
+      "id": "github", "label": "GitHub", "domain": "github.com", "worst": "ok",
+      "ssl": { "level": "ok", "message": "Valid for 41d", "validTo": "2026-08-08T00:00:00Z", "daysRemaining": 41, "issuer": "Sectigo Limited", "authorized": true, "authorizationError": null, "altNames": ["github.com", "*.github.com"] },
+      "domain_": { "level": "ok", "message": "Renews in 103d", "expiry": "2026-10-09T00:00:00Z", "daysRemaining": 103, "registrar": "MarkMonitor Inc.", "statuses": ["clientDeleteProhibited"], "source": "rdap" },
+      "dns": { "level": "ok", "message": "Stable since last check", "recordHash": "ghi789", "records": { "A": ["140.82.112.3"], "MX": ["1 aspmx.l.google.com"], "NS": ["dns1.p08.nsone.net", "ns-520.awsdns-01.net"] }, "comparedTo": "previous", "drift": [] }
+    }
+  ]
+}
