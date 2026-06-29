@@ -2,17 +2,6 @@
   "schema": 1,
   "alerts": [
     {
-      "id": "thestatus-dev:dns:-2",
-      "targetId": "thestatus-dev",
-      "label": "TheStatus.dev",
-      "kind": "dns",
-      "threshold": -2,
-      "level": "warn",
-      "message": "Records changed since last check (13 changes)",
-      "firedAt": "2026-06-28T17:44:57.434Z",
-      "resolvedAt": "2026-06-28T19:40:05.282Z"
-    },
-    {
       "id": "github:dns:-2",
       "targetId": "github",
       "label": "GitHub",
