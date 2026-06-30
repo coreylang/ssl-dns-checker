@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generatedAt": "2026-06-29T20:12:50.218Z",
-  "durationMs": 1006,
+  "generatedAt": "2026-06-30T04:12:32.395Z",
+  "durationMs": 760,
   "summary": {
     "critical": 0,
-    "warn": 1,
-    "ok": 2,
+    "warn": 0,
+    "ok": 3,
     "unknown": 0
   },
   "targets": [
@@ -17,10 +17,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 52d",
-        "checkedAt": "2026-06-29T20:12:49.212Z",
+        "message": "Valid for 51d",
+        "checkedAt": "2026-06-30T04:12:31.635Z",
         "validTo": "2026-08-20T20:19:08.000Z",
-        "daysRemaining": 52,
+        "daysRemaining": 51,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -31,10 +31,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 71d",
-        "checkedAt": "2026-06-29T20:12:49.243Z",
+        "message": "Renews in 70d",
+        "checkedAt": "2026-06-30T04:12:31.666Z",
         "expiry": "2026-09-09T03:54:41.907Z",
-        "daysRemaining": 71,
+        "daysRemaining": 70,
         "registrar": "GoDaddy.com, LLC",
         "statuses": [
           "client delete prohibited",
@@ -48,7 +48,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-06-29T20:12:49.266Z",
+        "checkedAt": "2026-06-30T04:12:31.688Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
           "TXT": [
@@ -56,13 +56,13 @@
             "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
             "v=spf1 include:dnsexit.com ~all"
           ],
-          "AAAA": [
-            "2606:4700:3034::6815:1040",
-            "2606:4700:3034::ac43:a6b6"
-          ],
           "NS": [
             "nancy.ns.cloudflare.com",
             "vicky.ns.cloudflare.com"
+          ],
+          "AAAA": [
+            "2606:4700:3034::6815:1040",
+            "2606:4700:3034::ac43:a6b6"
           ],
           "A": [
             "104.21.16.64",
@@ -81,14 +81,14 @@
       "id": "github",
       "label": "GitHub",
       "domain": "github.com",
-      "worst": "warn",
+      "worst": "ok",
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 34d",
-        "checkedAt": "2026-06-29T20:12:49.759Z",
+        "message": "Valid for 33d",
+        "checkedAt": "2026-06-30T04:12:32.100Z",
         "validTo": "2026-08-02T23:59:59.000Z",
-        "daysRemaining": 34,
+        "daysRemaining": 33,
         "issuer": "Sectigo Limited",
         "authorized": true,
         "authorizationError": null,
@@ -101,7 +101,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 101d",
-        "checkedAt": "2026-06-29T20:12:49.759Z",
+        "checkedAt": "2026-06-30T04:12:32.101Z",
         "expiry": "2026-10-09T18:20:50.000Z",
         "daysRemaining": 101,
         "registrar": "MarkMonitor Inc.",
@@ -114,9 +114,9 @@
       },
       "dns": {
         "kind": "dns",
-        "level": "warn",
-        "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-06-29T20:12:49.759Z",
+        "level": "ok",
+        "message": "Stable since last check",
+        "checkedAt": "2026-06-30T04:12:32.101Z",
         "recordHash": "5519ddc9e539d068",
         "records": {
           "A": [
@@ -160,10 +160,7 @@
           ]
         },
         "comparedTo": "previous",
-        "drift": [
-          "+ A 140.82.116.4",
-          "- A 140.82.114.3"
-        ]
+        "drift": []
       }
     },
     {
@@ -174,10 +171,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 40d",
-        "checkedAt": "2026-06-29T20:12:50.021Z",
+        "message": "Valid for 39d",
+        "checkedAt": "2026-06-30T04:12:32.317Z",
         "validTo": "2026-08-08T22:14:02.000Z",
-        "daysRemaining": 40,
+        "daysRemaining": 39,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -192,10 +189,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 2425d",
-        "checkedAt": "2026-06-29T20:12:50.022Z",
+        "message": "Renews in 2424d",
+        "checkedAt": "2026-06-30T04:12:32.317Z",
         "expiry": "2033-02-17T22:07:54.000Z",
-        "daysRemaining": 2425,
+        "daysRemaining": 2424,
         "registrar": "Cloudflare, Inc.",
         "statuses": [
           "client delete prohibited",
@@ -211,7 +208,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-06-29T20:12:50.022Z",
+        "checkedAt": "2026-06-30T04:12:32.317Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
@@ -221,13 +218,13 @@
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
           ],
-          "AAAA": [
-            "2606:4700::6810:84e5",
-            "2606:4700::6810:85e5"
-          ],
           "A": [
             "104.16.132.229",
             "104.16.133.229"
+          ],
+          "AAAA": [
+            "2606:4700::6810:84e5",
+            "2606:4700::6810:85e5"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
