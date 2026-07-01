@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-07-01T14:50:37.829Z",
-  "durationMs": 746,
+  "generatedAt": "2026-07-01T20:04:30.668Z",
+  "durationMs": 875,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 50d",
-        "checkedAt": "2026-07-01T14:50:37.083Z",
+        "checkedAt": "2026-07-01T20:04:29.793Z",
         "validTo": "2026-08-20T20:19:08.000Z",
         "daysRemaining": 50,
         "issuer": "Google Trust Services",
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 69d",
-        "checkedAt": "2026-07-01T14:50:37.114Z",
+        "checkedAt": "2026-07-01T20:04:29.825Z",
         "expiry": "2026-09-09T03:54:41.907Z",
         "daysRemaining": 69,
         "registrar": "GoDaddy.com, LLC",
@@ -48,12 +48,16 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-07-01T14:50:37.137Z",
+        "checkedAt": "2026-07-01T20:04:29.846Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
           "AAAA": [
             "2606:4700:3034::6815:1040",
             "2606:4700:3034::ac43:a6b6"
+          ],
+          "NS": [
+            "nancy.ns.cloudflare.com",
+            "vicky.ns.cloudflare.com"
           ],
           "TXT": [
             "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
@@ -63,10 +67,6 @@
           "A": [
             "104.21.16.64",
             "172.67.166.182"
-          ],
-          "NS": [
-            "nancy.ns.cloudflare.com",
-            "vicky.ns.cloudflare.com"
           ],
           "MX": [
             "0 mail.dnsexit.com",
@@ -86,7 +86,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 32d",
-        "checkedAt": "2026-07-01T14:50:37.544Z",
+        "checkedAt": "2026-07-01T20:04:30.340Z",
         "validTo": "2026-08-02T23:59:59.000Z",
         "daysRemaining": 32,
         "issuer": "Sectigo Limited",
@@ -100,10 +100,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 100d",
-        "checkedAt": "2026-07-01T14:50:37.545Z",
+        "message": "Renews in 99d",
+        "checkedAt": "2026-07-01T20:04:30.341Z",
         "expiry": "2026-10-09T18:20:50.000Z",
-        "daysRemaining": 100,
+        "daysRemaining": 99,
         "registrar": "MarkMonitor Inc.",
         "statuses": [
           "client delete prohibited",
@@ -116,11 +116,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-07-01T14:50:37.545Z",
-        "recordHash": "ad6575a58cc8a1bd",
+        "checkedAt": "2026-07-01T20:04:30.341Z",
+        "recordHash": "4548784e0774156b",
         "records": {
           "A": [
-            "140.82.112.4"
+            "140.82.114.4"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -161,8 +161,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.112.4",
-          "- A 140.82.116.4"
+          "+ A 140.82.114.4",
+          "- A 140.82.112.4"
         ]
       }
     },
@@ -175,7 +175,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 38d",
-        "checkedAt": "2026-07-01T14:50:37.762Z",
+        "checkedAt": "2026-07-01T20:04:30.567Z",
         "validTo": "2026-08-08T22:14:02.000Z",
         "daysRemaining": 38,
         "issuer": "Google Trust Services",
@@ -193,7 +193,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2423d",
-        "checkedAt": "2026-07-01T14:50:37.762Z",
+        "checkedAt": "2026-07-01T20:04:30.567Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2423,
         "registrar": "Cloudflare, Inc.",
@@ -211,7 +211,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-07-01T14:50:37.762Z",
+        "checkedAt": "2026-07-01T20:04:30.567Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "A": [
