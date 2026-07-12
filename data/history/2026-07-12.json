@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-12T03:35:47.308Z",
+  "generatedAt": "2026-07-12T08:27:02.748Z",
   "summary": {
     "critical": 0,
-    "warn": 0,
-    "ok": 3,
+    "warn": 1,
+    "ok": 2,
     "unknown": 0
   },
   "targets": [
@@ -11,15 +11,15 @@
       "id": "thestatus-dev",
       "worst": "ok",
       "ssl": 39,
-      "domain": 59,
+      "domain": 58,
       "dns": "ok"
     },
     {
       "id": "github",
-      "worst": "ok",
+      "worst": "warn",
       "ssl": 80,
       "domain": 89,
-      "dns": "ok"
+      "dns": "warn"
     },
     {
       "id": "cloudflare",
