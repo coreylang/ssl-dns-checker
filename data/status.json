@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-07-14T14:00:26.584Z",
-  "durationMs": 685,
+  "generatedAt": "2026-07-14T19:36:16.570Z",
+  "durationMs": 598,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 37d",
-        "checkedAt": "2026-07-14T14:00:25.899Z",
+        "checkedAt": "2026-07-14T19:36:15.972Z",
         "validTo": "2026-08-20T20:19:08.000Z",
         "daysRemaining": 37,
         "issuer": "Google Trust Services",
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 56d",
-        "checkedAt": "2026-07-14T14:00:25.932Z",
+        "checkedAt": "2026-07-14T19:36:16.005Z",
         "expiry": "2026-09-09T03:54:41.907Z",
         "daysRemaining": 56,
         "registrar": "GoDaddy.com, LLC",
@@ -48,7 +48,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-07-14T14:00:25.953Z",
+        "checkedAt": "2026-07-14T19:36:16.026Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
           "NS": [
@@ -86,7 +86,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 78d",
-        "checkedAt": "2026-07-14T14:00:26.354Z",
+        "checkedAt": "2026-07-14T19:36:16.297Z",
         "validTo": "2026-09-30T23:59:59.000Z",
         "daysRemaining": 78,
         "issuer": "Sectigo Limited",
@@ -100,10 +100,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 87d",
-        "checkedAt": "2026-07-14T14:00:26.354Z",
+        "message": "Renews in 86d",
+        "checkedAt": "2026-07-14T19:36:16.297Z",
         "expiry": "2026-10-09T18:20:50.000Z",
-        "daysRemaining": 87,
+        "daysRemaining": 86,
         "registrar": "MarkMonitor Inc.",
         "statuses": [
           "client delete prohibited",
@@ -116,11 +116,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-07-14T14:00:26.354Z",
-        "recordHash": "59e214a6e82b7ae2",
+        "checkedAt": "2026-07-14T19:36:16.297Z",
+        "recordHash": "56e6e0af355897ab",
         "records": {
           "A": [
-            "140.82.112.3"
+            "140.82.116.4"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -162,8 +162,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.112.3",
-          "- A 140.82.112.4"
+          "+ A 140.82.116.4",
+          "- A 140.82.112.3"
         ]
       }
     },
@@ -176,7 +176,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 84d",
-        "checkedAt": "2026-07-14T14:00:26.509Z",
+        "checkedAt": "2026-07-14T19:36:16.499Z",
         "validTo": "2026-10-06T22:47:27.000Z",
         "daysRemaining": 84,
         "issuer": "Google Trust Services",
@@ -194,7 +194,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2410d",
-        "checkedAt": "2026-07-14T14:00:26.510Z",
+        "checkedAt": "2026-07-14T19:36:16.500Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2410,
         "registrar": "Cloudflare, Inc.",
@@ -212,19 +212,19 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-07-14T14:00:26.510Z",
+        "checkedAt": "2026-07-14T19:36:16.500Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
+          "AAAA": [
+            "2606:4700::6810:84e5",
+            "2606:4700::6810:85e5"
+          ],
           "NS": [
             "ns3.cloudflare.com",
             "ns4.cloudflare.com",
             "ns5.cloudflare.com",
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
-          ],
-          "AAAA": [
-            "2606:4700::6810:84e5",
-            "2606:4700::6810:85e5"
           ],
           "A": [
             "104.16.132.229",
