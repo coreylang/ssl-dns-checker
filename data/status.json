@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-07-15T19:22:01.972Z",
-  "durationMs": 626,
+  "generatedAt": "2026-07-16T03:19:23.393Z",
+  "durationMs": 904,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -17,10 +17,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 36d",
-        "checkedAt": "2026-07-15T19:22:01.346Z",
+        "message": "Valid for 35d",
+        "checkedAt": "2026-07-16T03:19:22.489Z",
         "validTo": "2026-08-20T20:19:08.000Z",
-        "daysRemaining": 36,
+        "daysRemaining": 35,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 55d",
-        "checkedAt": "2026-07-15T19:22:01.372Z",
+        "checkedAt": "2026-07-16T03:19:22.521Z",
         "expiry": "2026-09-09T03:54:41.907Z",
         "daysRemaining": 55,
         "registrar": "GoDaddy.com, LLC",
@@ -48,12 +48,16 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-07-15T19:22:01.389Z",
+        "checkedAt": "2026-07-16T03:19:22.543Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
           "AAAA": [
             "2606:4700:3034::6815:1040",
             "2606:4700:3034::ac43:a6b6"
+          ],
+          "A": [
+            "104.21.16.64",
+            "172.67.166.182"
           ],
           "NS": [
             "nancy.ns.cloudflare.com",
@@ -63,10 +67,6 @@
             "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
             "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
             "v=spf1 include:dnsexit.com ~all"
-          ],
-          "A": [
-            "104.21.16.64",
-            "172.67.166.182"
           ],
           "MX": [
             "0 mail.dnsexit.com",
@@ -85,10 +85,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 77d",
-        "checkedAt": "2026-07-15T19:22:01.691Z",
+        "message": "Valid for 76d",
+        "checkedAt": "2026-07-16T03:19:22.915Z",
         "validTo": "2026-09-30T23:59:59.000Z",
-        "daysRemaining": 77,
+        "daysRemaining": 76,
         "issuer": "Sectigo Limited",
         "authorized": true,
         "authorizationError": null,
@@ -101,7 +101,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 85d",
-        "checkedAt": "2026-07-15T19:22:01.692Z",
+        "checkedAt": "2026-07-16T03:19:22.916Z",
         "expiry": "2026-10-09T18:20:50.000Z",
         "daysRemaining": 85,
         "registrar": "MarkMonitor Inc.",
@@ -116,11 +116,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-07-15T19:22:01.692Z",
-        "recordHash": "a648c929870d9964",
+        "checkedAt": "2026-07-16T03:19:22.916Z",
+        "recordHash": "e67eb6ff42f7266b",
         "records": {
           "A": [
-            "140.82.113.4"
+            "140.82.116.3"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -131,9 +131,6 @@
             "ns-1707.awsdns-21.co.uk",
             "ns-421.awsdns-52.com",
             "ns-520.awsdns-01.net"
-          ],
-          "MX": [
-            "0 github-com.mail.protection.outlook.com"
           ],
           "TXT": [
             "00Dd0000000hHE0=1TBKg000000TN2r",
@@ -158,12 +155,15 @@
             "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
             "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
             "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+          ],
+          "MX": [
+            "0 github-com.mail.protection.outlook.com"
           ]
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.113.4",
-          "- A 140.82.114.3"
+          "+ A 140.82.116.3",
+          "- A 140.82.113.4"
         ]
       }
     },
@@ -175,10 +175,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 83d",
-        "checkedAt": "2026-07-15T19:22:01.832Z",
+        "message": "Valid for 82d",
+        "checkedAt": "2026-07-16T03:19:23.169Z",
         "validTo": "2026-10-06T22:47:27.000Z",
-        "daysRemaining": 83,
+        "daysRemaining": 82,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -193,10 +193,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 2409d",
-        "checkedAt": "2026-07-15T19:22:01.833Z",
+        "message": "Renews in 2408d",
+        "checkedAt": "2026-07-16T03:19:23.169Z",
         "expiry": "2033-02-17T22:07:54.000Z",
-        "daysRemaining": 2409,
+        "daysRemaining": 2408,
         "registrar": "Cloudflare, Inc.",
         "statuses": [
           "client delete prohibited",
@@ -212,7 +212,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-07-15T19:22:01.833Z",
+        "checkedAt": "2026-07-16T03:19:23.169Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
@@ -222,13 +222,13 @@
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
           ],
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
-          ],
           "AAAA": [
             "2606:4700::6810:84e5",
             "2606:4700::6810:85e5"
+          ],
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
