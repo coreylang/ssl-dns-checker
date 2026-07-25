@@ -2,6 +2,17 @@
   "schema": 1,
   "alerts": [
     {
+      "id": "thestatus-dev:domain:45",
+      "targetId": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "kind": "domain",
+      "threshold": 45,
+      "level": "warn",
+      "message": "Renews in 45d",
+      "firedAt": "2026-07-25T08:16:53.529Z",
+      "resolvedAt": null
+    },
+    {
       "id": "github:dns:-2",
       "targetId": "github",
       "label": "GitHub",
