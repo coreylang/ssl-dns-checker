@@ -13,17 +13,6 @@
       "resolvedAt": null
     },
     {
-      "id": "thestatus-dev:dns:-2",
-      "targetId": "thestatus-dev",
-      "label": "TheStatus.dev",
-      "kind": "dns",
-      "threshold": -2,
-      "level": "warn",
-      "message": "Records changed since last check (6 changes)",
-      "firedAt": "2026-07-29T14:24:06.572Z",
-      "resolvedAt": "2026-07-30T02:52:16.685Z"
-    },
-    {
       "id": "github:dns:-2",
       "targetId": "github",
       "label": "GitHub",
