@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-08-07T00:08:12.100Z",
+  "summary": {
+    "critical": 0,
+    "warn": 2,
+    "ok": 1,
+    "unknown": 0
+  },
+  "targets": [
+    {
+      "id": "thestatus-dev",
+      "worst": "warn",
+      "ssl": 72,
+      "domain": 33,
+      "dns": "ok"
+    },
+    {
+      "id": "github",
+      "worst": "warn",
+      "ssl": 54,
+      "domain": 63,
+      "dns": "warn"
+    },
+    {
+      "id": "cloudflare",
+      "worst": "ok",
+      "ssl": 60,
+      "domain": 2386,
+      "dns": "ok"
+    }
+  ]
+}
