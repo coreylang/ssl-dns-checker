@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-13T07:43:22.263Z",
-  "durationMs": 804,
+  "generatedAt": "2026-08-13T13:25:52.509Z",
+  "durationMs": 904,
   "summary": {
     "critical": 0,
     "warn": 2,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 66d",
-        "checkedAt": "2026-08-13T07:43:21.459Z",
+        "checkedAt": "2026-08-13T13:25:51.606Z",
         "validTo": "2026-10-18T21:26:01.000Z",
         "daysRemaining": 66,
         "issuer": "Google Trust Services",
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "warn",
         "message": "Renews in 26d",
-        "checkedAt": "2026-08-13T07:43:21.484Z",
+        "checkedAt": "2026-08-13T13:25:51.645Z",
         "expiry": "2026-09-09T03:54:41.907Z",
         "daysRemaining": 26,
         "registrar": "GoDaddy.com, LLC",
@@ -48,12 +48,20 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-13T07:43:21.501Z",
+        "checkedAt": "2026-08-13T13:25:51.668Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
+          "MX": [
+            "0 mail.dnsexit.com",
+            "10 mail2.dnsexit.com"
+          ],
           "AAAA": [
             "2606:4700:3034::6815:1040",
             "2606:4700:3034::ac43:a6b6"
+          ],
+          "A": [
+            "104.21.16.64",
+            "172.67.166.182"
           ],
           "NS": [
             "nancy.ns.cloudflare.com",
@@ -63,14 +71,6 @@
             "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
             "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
             "v=spf1 include:dnsexit.com ~all"
-          ],
-          "A": [
-            "104.21.16.64",
-            "172.67.166.182"
-          ],
-          "MX": [
-            "0 mail.dnsexit.com",
-            "10 mail2.dnsexit.com"
           ]
         },
         "comparedTo": "previous",
@@ -86,7 +86,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 48d",
-        "checkedAt": "2026-08-13T07:43:21.874Z",
+        "checkedAt": "2026-08-13T13:25:52.040Z",
         "validTo": "2026-09-30T23:59:59.000Z",
         "daysRemaining": 48,
         "issuer": "Sectigo Limited",
@@ -101,7 +101,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 57d",
-        "checkedAt": "2026-08-13T07:43:21.875Z",
+        "checkedAt": "2026-08-13T13:25:52.040Z",
         "expiry": "2026-10-09T18:20:50.000Z",
         "daysRemaining": 57,
         "registrar": "MarkMonitor Inc.",
@@ -116,11 +116,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-08-13T07:43:21.875Z",
-        "recordHash": "a244995d78c114d2",
+        "checkedAt": "2026-08-13T13:25:52.040Z",
+        "recordHash": "e67eb6ff42f7266b",
         "records": {
           "A": [
-            "140.82.113.3"
+            "140.82.116.3"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -162,8 +162,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.113.3",
-          "- A 140.82.112.3"
+          "+ A 140.82.116.3",
+          "- A 140.82.113.3"
         ]
       }
     },
@@ -176,7 +176,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 54d",
-        "checkedAt": "2026-08-13T07:43:22.121Z",
+        "checkedAt": "2026-08-13T13:25:52.284Z",
         "validTo": "2026-10-06T22:47:27.000Z",
         "daysRemaining": 54,
         "issuer": "Google Trust Services",
@@ -194,7 +194,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2380d",
-        "checkedAt": "2026-08-13T07:43:22.122Z",
+        "checkedAt": "2026-08-13T13:25:52.285Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2380,
         "registrar": "Cloudflare, Inc.",
@@ -212,7 +212,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-13T07:43:22.122Z",
+        "checkedAt": "2026-08-13T13:25:52.285Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
