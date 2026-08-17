@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-17T07:07:20.990Z",
-  "durationMs": 815,
+  "generatedAt": "2026-08-17T12:56:10.931Z",
+  "durationMs": 641,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 62d",
-        "checkedAt": "2026-08-17T07:07:20.175Z",
+        "checkedAt": "2026-08-17T12:56:10.291Z",
         "validTo": "2026-10-18T21:26:01.000Z",
         "daysRemaining": 62,
         "issuer": "Google Trust Services",
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "warn",
         "message": "Renews in 22d",
-        "checkedAt": "2026-08-17T07:07:20.205Z",
+        "checkedAt": "2026-08-17T12:56:10.322Z",
         "expiry": "2026-09-09T03:54:41.907Z",
         "daysRemaining": 22,
         "registrar": "GoDaddy.com, LLC",
@@ -48,21 +48,21 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-17T07:07:20.225Z",
+        "checkedAt": "2026-08-17T12:56:10.343Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
           "AAAA": [
             "2606:4700:3034::6815:1040",
             "2606:4700:3034::ac43:a6b6"
           ],
-          "A": [
-            "104.21.16.64",
-            "172.67.166.182"
-          ],
           "TXT": [
             "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
             "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
             "v=spf1 include:dnsexit.com ~all"
+          ],
+          "A": [
+            "104.21.16.64",
+            "172.67.166.182"
           ],
           "NS": [
             "nancy.ns.cloudflare.com",
@@ -86,7 +86,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 44d",
-        "checkedAt": "2026-08-17T07:07:20.568Z",
+        "checkedAt": "2026-08-17T12:56:10.592Z",
         "validTo": "2026-09-30T23:59:59.000Z",
         "daysRemaining": 44,
         "issuer": "Sectigo Limited",
@@ -101,7 +101,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 53d",
-        "checkedAt": "2026-08-17T07:07:20.569Z",
+        "checkedAt": "2026-08-17T12:56:10.592Z",
         "expiry": "2026-10-09T18:20:50.000Z",
         "daysRemaining": 53,
         "registrar": "MarkMonitor Inc.",
@@ -116,7 +116,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-17T07:07:20.569Z",
+        "checkedAt": "2026-08-17T12:56:10.592Z",
         "recordHash": "2acd8e6425577a4a",
         "records": {
           "A": [
@@ -173,7 +173,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 50d",
-        "checkedAt": "2026-08-17T07:07:20.780Z",
+        "checkedAt": "2026-08-17T12:56:10.775Z",
         "validTo": "2026-10-06T22:47:27.000Z",
         "daysRemaining": 50,
         "issuer": "Google Trust Services",
@@ -191,7 +191,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2376d",
-        "checkedAt": "2026-08-17T07:07:20.780Z",
+        "checkedAt": "2026-08-17T12:56:10.776Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2376,
         "registrar": "Cloudflare, Inc.",
@@ -209,7 +209,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-17T07:07:20.780Z",
+        "checkedAt": "2026-08-17T12:56:10.776Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
@@ -219,13 +219,13 @@
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
           ],
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
-          ],
           "AAAA": [
             "2606:4700::6810:84e5",
             "2606:4700::6810:85e5"
+          ],
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
