@@ -11,6 +11,17 @@
       "message": "Renews in 30d",
       "firedAt": "2026-08-09T07:05:37.081Z",
       "resolvedAt": null
+    },
+    {
+      "id": "github:dns:-2",
+      "targetId": "github",
+      "label": "GitHub",
+      "kind": "dns",
+      "threshold": -2,
+      "level": "warn",
+      "message": "Records changed since last check (2 changes)",
+      "firedAt": "2026-08-17T18:49:03.307Z",
+      "resolvedAt": null
     }
   ]
 }
