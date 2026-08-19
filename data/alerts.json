@@ -20,8 +20,8 @@
       "threshold": -2,
       "level": "warn",
       "message": "Records changed since last check (2 changes)",
-      "firedAt": "2026-08-17T18:49:03.307Z",
-      "resolvedAt": "2026-08-19T01:40:40.235Z"
+      "firedAt": "2026-08-19T06:54:36.682Z",
+      "resolvedAt": null
     }
   ]
 }

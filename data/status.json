@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-19T01:40:40.295Z",
-  "durationMs": 484,
+  "generatedAt": "2026-08-19T06:54:36.820Z",
+  "durationMs": 611,
   "summary": {
     "critical": 0,
-    "warn": 1,
-    "ok": 2,
+    "warn": 2,
+    "ok": 1,
     "unknown": 0
   },
   "targets": [
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 60d",
-        "checkedAt": "2026-08-19T01:40:39.812Z",
+        "checkedAt": "2026-08-19T06:54:36.210Z",
         "validTo": "2026-10-18T21:26:01.000Z",
         "daysRemaining": 60,
         "issuer": "Google Trust Services",
@@ -31,10 +31,10 @@
       "domain_": {
         "kind": "domain",
         "level": "warn",
-        "message": "Renews in 21d",
-        "checkedAt": "2026-08-19T01:40:39.841Z",
+        "message": "Renews in 20d",
+        "checkedAt": "2026-08-19T06:54:36.247Z",
         "expiry": "2026-09-09T03:54:41.907Z",
-        "daysRemaining": 21,
+        "daysRemaining": 20,
         "registrar": "GoDaddy.com, LLC",
         "statuses": [
           "client delete prohibited",
@@ -48,25 +48,25 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-19T01:40:39.861Z",
+        "checkedAt": "2026-08-19T06:54:36.275Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
+          "A": [
+            "104.21.16.64",
+            "172.67.166.182"
+          ],
           "AAAA": [
             "2606:4700:3034::6815:1040",
             "2606:4700:3034::ac43:a6b6"
-          ],
-          "NS": [
-            "nancy.ns.cloudflare.com",
-            "vicky.ns.cloudflare.com"
           ],
           "TXT": [
             "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
             "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
             "v=spf1 include:dnsexit.com ~all"
           ],
-          "A": [
-            "104.21.16.64",
-            "172.67.166.182"
+          "NS": [
+            "nancy.ns.cloudflare.com",
+            "vicky.ns.cloudflare.com"
           ],
           "MX": [
             "0 mail.dnsexit.com",
@@ -81,12 +81,12 @@
       "id": "github",
       "label": "GitHub",
       "domain": "github.com",
-      "worst": "ok",
+      "worst": "warn",
       "ssl": {
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 42d",
-        "checkedAt": "2026-08-19T01:40:40.127Z",
+        "checkedAt": "2026-08-19T06:54:36.553Z",
         "validTo": "2026-09-30T23:59:59.000Z",
         "daysRemaining": 42,
         "issuer": "Sectigo Limited",
@@ -101,7 +101,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 51d",
-        "checkedAt": "2026-08-19T01:40:40.127Z",
+        "checkedAt": "2026-08-19T06:54:36.554Z",
         "expiry": "2026-10-09T18:20:50.000Z",
         "daysRemaining": 51,
         "registrar": "MarkMonitor Inc.",
@@ -114,13 +114,13 @@
       },
       "dns": {
         "kind": "dns",
-        "level": "ok",
-        "message": "Stable since last check",
-        "checkedAt": "2026-08-19T01:40:40.127Z",
-        "recordHash": "7cddbf3e9b5f3b1f",
+        "level": "warn",
+        "message": "Records changed since last check (2 changes)",
+        "checkedAt": "2026-08-19T06:54:36.554Z",
+        "recordHash": "6651fdb5461f7af3",
         "records": {
           "A": [
-            "140.82.112.4"
+            "140.82.114.4"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -131,6 +131,9 @@
             "ns-1707.awsdns-21.co.uk",
             "ns-421.awsdns-52.com",
             "ns-520.awsdns-01.net"
+          ],
+          "MX": [
+            "0 github-com.mail.protection.outlook.com"
           ],
           "TXT": [
             "00Dd0000000hHE0=1TBKg000000TN2r",
@@ -156,13 +159,13 @@
             "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
             "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
             "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
-          ],
-          "MX": [
-            "0 github-com.mail.protection.outlook.com"
           ]
         },
         "comparedTo": "previous",
-        "drift": []
+        "drift": [
+          "+ A 140.82.114.4",
+          "- A 140.82.112.4"
+        ]
       }
     },
     {
@@ -174,7 +177,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 48d",
-        "checkedAt": "2026-08-19T01:40:40.235Z",
+        "checkedAt": "2026-08-19T06:54:36.682Z",
         "validTo": "2026-10-06T22:47:27.000Z",
         "daysRemaining": 48,
         "issuer": "Google Trust Services",
@@ -192,7 +195,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2374d",
-        "checkedAt": "2026-08-19T01:40:40.236Z",
+        "checkedAt": "2026-08-19T06:54:36.683Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2374,
         "registrar": "Cloudflare, Inc.",
@@ -210,7 +213,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-08-19T01:40:40.236Z",
+        "checkedAt": "2026-08-19T06:54:36.683Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
@@ -220,13 +223,13 @@
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
           ],
-          "AAAA": [
-            "2606:4700::6810:84e5",
-            "2606:4700::6810:85e5"
-          ],
           "A": [
             "104.16.132.229",
             "104.16.133.229"
+          ],
+          "AAAA": [
+            "2606:4700::6810:84e5",
+            "2606:4700::6810:85e5"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
