@@ -13,6 +13,17 @@
       "resolvedAt": null
     },
     {
+      "id": "github:domain:45",
+      "targetId": "github",
+      "label": "GitHub",
+      "kind": "domain",
+      "threshold": 45,
+      "level": "warn",
+      "message": "Renews in 45d",
+      "firedAt": "2026-08-24T18:49:49.722Z",
+      "resolvedAt": null
+    },
+    {
       "id": "github:dns:-2",
       "targetId": "github",
       "label": "GitHub",
