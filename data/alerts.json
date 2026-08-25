@@ -13,17 +13,6 @@
       "resolvedAt": null
     },
     {
-      "id": "thestatus-dev:domain:30",
-      "targetId": "thestatus-dev",
-      "label": "TheStatus.dev",
-      "kind": "domain",
-      "threshold": 30,
-      "level": "warn",
-      "message": "Renews in 30d",
-      "firedAt": "2026-08-09T07:05:37.081Z",
-      "resolvedAt": "2026-08-25T06:57:49.615Z"
-    },
-    {
       "id": "github:domain:45",
       "targetId": "github",
       "label": "GitHub",
