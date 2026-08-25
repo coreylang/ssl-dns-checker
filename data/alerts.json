@@ -2,6 +2,17 @@
   "schema": 1,
   "alerts": [
     {
+      "id": "thestatus-dev:domain:14",
+      "targetId": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "kind": "domain",
+      "threshold": 14,
+      "level": "critical",
+      "message": "Renews in 14d",
+      "firedAt": "2026-08-25T06:57:49.615Z",
+      "resolvedAt": null
+    },
+    {
       "id": "thestatus-dev:domain:30",
       "targetId": "thestatus-dev",
       "label": "TheStatus.dev",
@@ -10,7 +21,7 @@
       "level": "warn",
       "message": "Renews in 30d",
       "firedAt": "2026-08-09T07:05:37.081Z",
-      "resolvedAt": null
+      "resolvedAt": "2026-08-25T06:57:49.615Z"
     },
     {
       "id": "github:domain:45",
