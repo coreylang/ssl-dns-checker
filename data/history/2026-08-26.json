@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T01:45:31.181Z",
+  "generatedAt": "2026-08-26T06:58:56.320Z",
   "summary": {
     "critical": 1,
     "warn": 1,
@@ -11,7 +11,7 @@
       "id": "thestatus-dev",
       "worst": "critical",
       "ssl": 53,
-      "domain": 14,
+      "domain": 13,
       "dns": "ok"
     },
     {
@@ -19,7 +19,7 @@
       "worst": "warn",
       "ssl": 35,
       "domain": 44,
-      "dns": "warn"
+      "dns": "ok"
     },
     {
       "id": "cloudflare",
