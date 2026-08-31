@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T05:03:52.224Z",
+  "generatedAt": "2026-08-31T13:21:14.109Z",
   "summary": {
     "critical": 1,
     "warn": 1,
@@ -19,7 +19,7 @@
       "worst": "warn",
       "ssl": 30,
       "domain": 39,
-      "dns": "warn"
+      "dns": "ok"
     },
     {
       "id": "cloudflare",
