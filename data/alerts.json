@@ -2,6 +2,17 @@
   "schema": 1,
   "alerts": [
     {
+      "id": "thestatus-dev:domain:7",
+      "targetId": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "kind": "domain",
+      "threshold": 7,
+      "level": "critical",
+      "message": "Renews in 7d",
+      "firedAt": "2026-09-01T04:41:21.968Z",
+      "resolvedAt": null
+    },
+    {
       "id": "thestatus-dev:domain:14",
       "targetId": "thestatus-dev",
       "label": "TheStatus.dev",
@@ -10,18 +21,7 @@
       "level": "critical",
       "message": "Renews in 14d",
       "firedAt": "2026-08-25T06:57:49.615Z",
-      "resolvedAt": null
-    },
-    {
-      "id": "github:ssl:30",
-      "targetId": "github",
-      "label": "GitHub",
-      "kind": "ssl",
-      "threshold": 30,
-      "level": "warn",
-      "message": "Valid for 30d",
-      "firedAt": "2026-08-31T05:03:52.170Z",
-      "resolvedAt": null
+      "resolvedAt": "2026-09-01T04:41:21.968Z"
     },
     {
       "id": "github:domain:45",
@@ -44,6 +44,17 @@
       "message": "Records changed since last check (3 changes)",
       "firedAt": "2026-08-31T22:42:54.188Z",
       "resolvedAt": null
+    },
+    {
+      "id": "github:ssl:30",
+      "targetId": "github",
+      "label": "GitHub",
+      "kind": "ssl",
+      "threshold": 30,
+      "level": "warn",
+      "message": "Valid for 30d",
+      "firedAt": "2026-08-31T05:03:52.170Z",
+      "resolvedAt": "2026-09-01T04:41:22.131Z"
     }
   ]
 }
