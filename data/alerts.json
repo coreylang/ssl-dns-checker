@@ -13,17 +13,6 @@
       "resolvedAt": null
     },
     {
-      "id": "thestatus-dev:domain:7",
-      "targetId": "thestatus-dev",
-      "label": "TheStatus.dev",
-      "kind": "domain",
-      "threshold": 7,
-      "level": "critical",
-      "message": "Renews in 7d",
-      "firedAt": "2026-09-01T04:41:21.968Z",
-      "resolvedAt": "2026-09-05T04:00:56.566Z"
-    },
-    {
       "id": "github:domain:45",
       "targetId": "github",
       "label": "GitHub",
