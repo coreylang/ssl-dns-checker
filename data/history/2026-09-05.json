@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T14:58:11.971Z",
+  "generatedAt": "2026-09-05T20:12:43.674Z",
   "summary": {
     "critical": 1,
     "warn": 1,
@@ -18,7 +18,7 @@
       "id": "github",
       "worst": "warn",
       "ssl": 85,
-      "domain": 34,
+      "domain": 33,
       "dns": "warn"
     },
     {
