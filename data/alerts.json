@@ -21,18 +21,7 @@
       "level": "warn",
       "message": "Records changed since last check (2 changes)",
       "firedAt": "2026-09-03T16:14:31.650Z",
-      "resolvedAt": null
-    },
-    {
-      "id": "github:domain:45",
-      "targetId": "github",
-      "label": "GitHub",
-      "kind": "domain",
-      "threshold": 45,
-      "level": "warn",
-      "message": "Renews in 45d",
-      "firedAt": "2026-08-24T18:49:49.722Z",
-      "resolvedAt": "2026-09-07T12:10:45.179Z"
+      "resolvedAt": "2026-09-07T21:23:41.337Z"
     }
   ]
 }
