@@ -11,6 +11,17 @@
       "message": "Renews in 3d",
       "firedAt": "2026-09-05T04:00:56.566Z",
       "resolvedAt": null
+    },
+    {
+      "id": "github:dns:-2",
+      "targetId": "github",
+      "label": "GitHub",
+      "kind": "dns",
+      "threshold": -2,
+      "level": "warn",
+      "message": "Records changed since last check (2 changes)",
+      "firedAt": "2026-09-08T11:01:25.839Z",
+      "resolvedAt": null
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-08T04:09:08.359Z",
+  "generatedAt": "2026-09-08T11:01:25.992Z",
   "summary": {
     "critical": 1,
-    "warn": 0,
-    "ok": 2,
+    "warn": 1,
+    "ok": 1,
     "unknown": 0
   },
   "targets": [
@@ -16,10 +16,10 @@
     },
     {
       "id": "github",
-      "worst": "ok",
+      "worst": "warn",
       "ssl": 82,
       "domain": 762,
-      "dns": "ok"
+      "dns": "warn"
     },
     {
       "id": "cloudflare",
