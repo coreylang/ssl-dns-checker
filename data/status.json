@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-07T21:23:41.469Z",
-  "durationMs": 588,
+  "generatedAt": "2026-09-08T04:09:08.359Z",
+  "durationMs": 547,
   "summary": {
     "critical": 1,
     "warn": 0,
@@ -17,10 +17,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 41d",
-        "checkedAt": "2026-09-07T21:23:40.881Z",
+        "message": "Valid for 40d",
+        "checkedAt": "2026-09-08T04:09:07.812Z",
         "validTo": "2026-10-18T21:26:01.000Z",
-        "daysRemaining": 41,
+        "daysRemaining": 40,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -31,10 +31,10 @@
       "domain_": {
         "kind": "domain",
         "level": "critical",
-        "message": "Renews in 1d",
-        "checkedAt": "2026-09-07T21:23:40.908Z",
+        "message": "Renews in 0d",
+        "checkedAt": "2026-09-08T04:09:07.846Z",
         "expiry": "2026-09-09T03:54:41.907Z",
-        "daysRemaining": 1,
+        "daysRemaining": 0,
         "registrar": "GoDaddy.com, LLC",
         "statuses": [
           "client delete prohibited",
@@ -48,17 +48,12 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-07T21:23:40.925Z",
+        "checkedAt": "2026-09-08T04:09:07.868Z",
         "recordHash": "4dd64a07067a8ddd",
         "records": {
           "A": [
             "104.21.16.64",
             "172.67.166.182"
-          ],
-          "TXT": [
-            "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
-            "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
-            "v=spf1 include:dnsexit.com ~all"
           ],
           "AAAA": [
             "2606:4700:3034::6815:1040",
@@ -67,6 +62,11 @@
           "NS": [
             "nancy.ns.cloudflare.com",
             "vicky.ns.cloudflare.com"
+          ],
+          "TXT": [
+            "google-site-verification=Km24G-uhl5GnUmT-gbIvsnZjz2zCELBnDaBgxC0rz4g",
+            "google-site-verification=lNKkjp-a1bFN2XIKo83uotMXbHGPdHZvcpmwg4um58Q",
+            "v=spf1 include:dnsexit.com ~all"
           ],
           "MX": [
             "0 mail.dnsexit.com",
@@ -85,10 +85,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 83d",
-        "checkedAt": "2026-09-07T21:23:41.231Z",
+        "message": "Valid for 82d",
+        "checkedAt": "2026-09-08T04:09:08.074Z",
         "validTo": "2026-11-29T23:59:59.000Z",
-        "daysRemaining": 83,
+        "daysRemaining": 82,
         "issuer": "Sectigo Limited",
         "authorized": true,
         "authorizationError": null,
@@ -101,7 +101,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 762d",
-        "checkedAt": "2026-09-07T21:23:41.232Z",
+        "checkedAt": "2026-09-08T04:09:08.075Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 762,
         "registrar": "MarkMonitor Inc.",
@@ -116,7 +116,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-07T21:23:41.232Z",
+        "checkedAt": "2026-09-08T04:09:08.075Z",
         "recordHash": "f531674480e479f7",
         "records": {
           "A": [
@@ -131,9 +131,6 @@
             "ns-1707.awsdns-21.co.uk",
             "ns-421.awsdns-52.com",
             "ns-520.awsdns-01.net"
-          ],
-          "MX": [
-            "0 github-com.mail.protection.outlook.com"
           ],
           "TXT": [
             "00Dd0000000hHE0=1TBKg000000TN2r",
@@ -160,6 +157,9 @@
             "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
             "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
             "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+          ],
+          "MX": [
+            "0 github-com.mail.protection.outlook.com"
           ]
         },
         "comparedTo": "previous",
@@ -174,10 +174,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 88d",
-        "checkedAt": "2026-09-07T21:23:41.337Z",
+        "message": "Valid for 87d",
+        "checkedAt": "2026-09-08T04:09:08.177Z",
         "validTo": "2026-12-04T23:29:33.000Z",
-        "daysRemaining": 88,
+        "daysRemaining": 87,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -192,10 +192,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 2355d",
-        "checkedAt": "2026-09-07T21:23:41.338Z",
+        "message": "Renews in 2354d",
+        "checkedAt": "2026-09-08T04:09:08.178Z",
         "expiry": "2033-02-17T22:07:54.000Z",
-        "daysRemaining": 2355,
+        "daysRemaining": 2354,
         "registrar": "Cloudflare, Inc.",
         "statuses": [
           "client delete prohibited",
@@ -211,7 +211,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-07T21:23:41.338Z",
+        "checkedAt": "2026-09-08T04:09:08.178Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
@@ -221,13 +221,13 @@
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
           ],
-          "AAAA": [
-            "2606:4700::6810:84e5",
-            "2606:4700::6810:85e5"
-          ],
           "A": [
             "104.16.132.229",
             "104.16.133.229"
+          ],
+          "AAAA": [
+            "2606:4700::6810:84e5",
+            "2606:4700::6810:85e5"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
