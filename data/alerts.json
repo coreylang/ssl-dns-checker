@@ -2,17 +2,6 @@
   "schema": 1,
   "alerts": [
     {
-      "id": "thestatus-dev:domain:3",
-      "targetId": "thestatus-dev",
-      "label": "TheStatus.dev",
-      "kind": "domain",
-      "threshold": 3,
-      "level": "critical",
-      "message": "Renews in 3d",
-      "firedAt": "2026-09-05T04:00:56.566Z",
-      "resolvedAt": "2026-09-09T04:15:57.020Z"
-    },
-    {
       "id": "github:dns:-2",
       "targetId": "github",
       "label": "GitHub",
