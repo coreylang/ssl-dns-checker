@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-14T04:30:02.810Z",
+  "generatedAt": "2026-09-14T12:26:43.948Z",
   "summary": {
     "critical": 0,
-    "warn": 1,
-    "ok": 2,
+    "warn": 2,
+    "ok": 1,
     "unknown": 0
   },
   "targets": [
     {
       "id": "thestatus-dev",
-      "worst": "ok",
-      "ssl": 34,
+      "worst": "warn",
+      "ssl": 197,
       "domain": 359,
-      "dns": "ok"
+      "dns": "warn"
     },
     {
       "id": "github",
