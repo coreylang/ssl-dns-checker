@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-22T11:21:18.666Z",
-  "durationMs": 491,
+  "generatedAt": "2026-09-22T16:43:30.216Z",
+  "durationMs": 668,
   "summary": {
     "critical": 0,
-    "warn": 0,
-    "ok": 3,
+    "warn": 1,
+    "ok": 2,
     "unknown": 0
   },
   "targets": [
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 189d",
-        "checkedAt": "2026-09-22T11:21:18.175Z",
+        "checkedAt": "2026-09-22T16:43:29.548Z",
         "validTo": "2027-03-31T10:57:41.000Z",
         "daysRemaining": 189,
         "issuer": "GoDaddy.com",
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 351d",
-        "checkedAt": "2026-09-22T11:21:18.214Z",
+        "checkedAt": "2026-09-22T16:43:29.580Z",
         "expiry": "2027-09-09T03:54:41.907Z",
         "daysRemaining": 351,
         "registrar": "GoDaddy.com, LLC",
@@ -48,7 +48,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-22T11:21:18.238Z",
+        "checkedAt": "2026-09-22T16:43:29.601Z",
         "recordHash": "fd2371b4f16bb98d",
         "records": {
           "NS": [
@@ -68,12 +68,12 @@
       "id": "github",
       "label": "GitHub",
       "domain": "github.com",
-      "worst": "ok",
+      "worst": "warn",
       "ssl": {
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 68d",
-        "checkedAt": "2026-09-22T11:21:18.473Z",
+        "checkedAt": "2026-09-22T16:43:29.955Z",
         "validTo": "2026-11-29T23:59:59.000Z",
         "daysRemaining": 68,
         "issuer": "Sectigo Limited",
@@ -88,7 +88,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 748d",
-        "checkedAt": "2026-09-22T11:21:18.474Z",
+        "checkedAt": "2026-09-22T16:43:29.955Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 748,
         "registrar": "MarkMonitor Inc.",
@@ -101,13 +101,13 @@
       },
       "dns": {
         "kind": "dns",
-        "level": "ok",
-        "message": "Stable since last check",
-        "checkedAt": "2026-09-22T11:21:18.474Z",
-        "recordHash": "3998203285a4af3b",
+        "level": "warn",
+        "message": "Records changed since last check (2 changes)",
+        "checkedAt": "2026-09-22T16:43:29.955Z",
+        "recordHash": "8f006e600b80afb1",
         "records": {
           "A": [
-            "140.82.114.3"
+            "20.29.134.23"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -150,7 +150,10 @@
           ]
         },
         "comparedTo": "previous",
-        "drift": []
+        "drift": [
+          "+ A 20.29.134.23",
+          "- A 140.82.114.3"
+        ]
       }
     },
     {
@@ -162,7 +165,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 73d",
-        "checkedAt": "2026-09-22T11:21:18.595Z",
+        "checkedAt": "2026-09-22T16:43:30.108Z",
         "validTo": "2026-12-04T23:29:33.000Z",
         "daysRemaining": 73,
         "issuer": "Google Trust Services",
@@ -180,7 +183,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2340d",
-        "checkedAt": "2026-09-22T11:21:18.596Z",
+        "checkedAt": "2026-09-22T16:43:30.108Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2340,
         "registrar": "Cloudflare, Inc.",
@@ -198,19 +201,19 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-22T11:21:18.596Z",
+        "checkedAt": "2026-09-22T16:43:30.108Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
+          ],
           "NS": [
             "ns3.cloudflare.com",
             "ns4.cloudflare.com",
             "ns5.cloudflare.com",
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
-          ],
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
           ],
           "AAAA": [
             "2606:4700::6810:84e5",
