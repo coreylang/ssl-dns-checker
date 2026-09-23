@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-22T21:08:37.001Z",
-  "durationMs": 445,
+  "generatedAt": "2026-09-23T04:23:00.855Z",
+  "durationMs": 677,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 189d",
-        "checkedAt": "2026-09-22T21:08:36.556Z",
+        "checkedAt": "2026-09-23T04:23:00.178Z",
         "validTo": "2027-03-31T10:57:41.000Z",
         "daysRemaining": 189,
         "issuer": "GoDaddy.com",
@@ -31,10 +31,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 351d",
-        "checkedAt": "2026-09-22T21:08:36.594Z",
+        "message": "Renews in 350d",
+        "checkedAt": "2026-09-23T04:23:00.211Z",
         "expiry": "2027-09-09T03:54:41.907Z",
-        "daysRemaining": 351,
+        "daysRemaining": 350,
         "registrar": "GoDaddy.com, LLC",
         "statuses": [
           "auto renew period",
@@ -48,7 +48,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-22T21:08:36.616Z",
+        "checkedAt": "2026-09-23T04:23:00.231Z",
         "recordHash": "fd2371b4f16bb98d",
         "records": {
           "A": [
@@ -72,10 +72,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 68d",
-        "checkedAt": "2026-09-22T21:08:36.866Z",
+        "message": "Valid for 67d",
+        "checkedAt": "2026-09-23T04:23:00.539Z",
         "validTo": "2026-11-29T23:59:59.000Z",
-        "daysRemaining": 68,
+        "daysRemaining": 67,
         "issuer": "Sectigo Limited",
         "authorized": true,
         "authorizationError": null,
@@ -88,7 +88,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 747d",
-        "checkedAt": "2026-09-22T21:08:36.867Z",
+        "checkedAt": "2026-09-23T04:23:00.539Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 747,
         "registrar": "MarkMonitor Inc.",
@@ -103,11 +103,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-09-22T21:08:36.867Z",
-        "recordHash": "58c907ee5f377212",
+        "checkedAt": "2026-09-23T04:23:00.539Z",
+        "recordHash": "f531674480e479f7",
         "records": {
           "A": [
-            "140.82.112.3"
+            "140.82.114.4"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -151,8 +151,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.112.3",
-          "- A 20.29.134.23"
+          "+ A 140.82.114.4",
+          "- A 140.82.112.3"
         ]
       }
     },
@@ -164,10 +164,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 73d",
-        "checkedAt": "2026-09-22T21:08:36.916Z",
+        "message": "Valid for 72d",
+        "checkedAt": "2026-09-23T04:23:00.692Z",
         "validTo": "2026-12-04T23:29:33.000Z",
-        "daysRemaining": 73,
+        "daysRemaining": 72,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -182,10 +182,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 2340d",
-        "checkedAt": "2026-09-22T21:08:36.917Z",
+        "message": "Renews in 2339d",
+        "checkedAt": "2026-09-23T04:23:00.693Z",
         "expiry": "2033-02-17T22:07:54.000Z",
-        "daysRemaining": 2340,
+        "daysRemaining": 2339,
         "registrar": "Cloudflare, Inc.",
         "statuses": [
           "client delete prohibited",
@@ -201,19 +201,19 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-22T21:08:36.917Z",
+        "checkedAt": "2026-09-23T04:23:00.693Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
+          ],
           "NS": [
             "ns3.cloudflare.com",
             "ns4.cloudflare.com",
             "ns5.cloudflare.com",
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
-          ],
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
           ],
           "AAAA": [
             "2606:4700::6810:84e5",
