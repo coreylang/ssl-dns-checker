@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-23T16:38:43.125Z",
-  "durationMs": 538,
+  "generatedAt": "2026-09-23T21:22:34.678Z",
+  "durationMs": 391,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 188d",
-        "checkedAt": "2026-09-23T16:38:42.587Z",
+        "checkedAt": "2026-09-23T21:22:34.287Z",
         "validTo": "2027-03-31T10:57:41.000Z",
         "daysRemaining": 188,
         "issuer": "GoDaddy.com",
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 350d",
-        "checkedAt": "2026-09-23T16:38:42.619Z",
+        "checkedAt": "2026-09-23T21:22:34.319Z",
         "expiry": "2027-09-09T03:54:41.907Z",
         "daysRemaining": 350,
         "registrar": "GoDaddy.com, LLC",
@@ -48,7 +48,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-23T16:38:42.640Z",
+        "checkedAt": "2026-09-23T21:22:34.341Z",
         "recordHash": "fd2371b4f16bb98d",
         "records": {
           "A": [
@@ -73,7 +73,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 67d",
-        "checkedAt": "2026-09-23T16:38:42.973Z",
+        "checkedAt": "2026-09-23T21:22:34.520Z",
         "validTo": "2026-11-29T23:59:59.000Z",
         "daysRemaining": 67,
         "issuer": "Sectigo Limited",
@@ -87,10 +87,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 747d",
-        "checkedAt": "2026-09-23T16:38:42.974Z",
+        "message": "Renews in 746d",
+        "checkedAt": "2026-09-23T21:22:34.521Z",
         "expiry": "2028-10-09T18:20:50.000Z",
-        "daysRemaining": 747,
+        "daysRemaining": 746,
         "registrar": "MarkMonitor Inc.",
         "statuses": [
           "client delete prohibited",
@@ -103,12 +103,9 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-09-23T16:38:42.974Z",
-        "recordHash": "0952837aebc67751",
+        "checkedAt": "2026-09-23T21:22:34.521Z",
+        "recordHash": "cafc83042a839c67",
         "records": {
-          "A": [
-            "172.182.252.133"
-          ],
           "NS": [
             "dns1.p08.nsone.net",
             "dns2.p08.nsone.net",
@@ -147,12 +144,15 @@
           ],
           "MX": [
             "0 github-com.mail.protection.outlook.com"
+          ],
+          "A": [
+            "140.82.113.3"
           ]
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 172.182.252.133",
-          "- A 140.82.114.4"
+          "+ A 140.82.113.3",
+          "- A 172.182.252.133"
         ]
       }
     },
@@ -165,7 +165,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 72d",
-        "checkedAt": "2026-09-23T16:38:43.059Z",
+        "checkedAt": "2026-09-23T21:22:34.603Z",
         "validTo": "2026-12-04T23:29:33.000Z",
         "daysRemaining": 72,
         "issuer": "Google Trust Services",
@@ -183,7 +183,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2339d",
-        "checkedAt": "2026-09-23T16:38:43.059Z",
+        "checkedAt": "2026-09-23T21:22:34.604Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2339,
         "registrar": "Cloudflare, Inc.",
@@ -201,19 +201,19 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-23T16:38:43.059Z",
+        "checkedAt": "2026-09-23T21:22:34.604Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
+          ],
           "NS": [
             "ns3.cloudflare.com",
             "ns4.cloudflare.com",
             "ns5.cloudflare.com",
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
-          ],
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
           ],
           "AAAA": [
             "2606:4700::6810:84e5",
