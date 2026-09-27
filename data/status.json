@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generatedAt": "2026-09-27T04:54:56.104Z",
-  "durationMs": 871,
+  "generatedAt": "2026-09-27T11:49:31.130Z",
+  "durationMs": 640,
   "summary": {
     "critical": 0,
-    "warn": 0,
-    "ok": 3,
+    "warn": 1,
+    "ok": 2,
     "unknown": 0
   },
   "targets": [
@@ -17,10 +17,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 185d",
-        "checkedAt": "2026-09-27T04:54:55.233Z",
+        "message": "Valid for 184d",
+        "checkedAt": "2026-09-27T11:49:30.490Z",
         "validTo": "2027-03-31T10:57:41.000Z",
-        "daysRemaining": 185,
+        "daysRemaining": 184,
         "issuer": "GoDaddy.com",
         "authorized": true,
         "authorizationError": null,
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 346d",
-        "checkedAt": "2026-09-27T04:54:55.270Z",
+        "checkedAt": "2026-09-27T11:49:30.524Z",
         "expiry": "2027-09-09T03:54:41.907Z",
         "daysRemaining": 346,
         "registrar": "GoDaddy.com, LLC",
@@ -48,16 +48,16 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-27T04:54:55.292Z",
+        "checkedAt": "2026-09-27T11:49:30.546Z",
         "recordHash": "fd2371b4f16bb98d",
         "records": {
-          "NS": [
-            "ns03.domaincontrol.com",
-            "ns04.domaincontrol.com"
-          ],
           "A": [
             "13.248.213.45",
             "76.223.67.189"
+          ],
+          "NS": [
+            "ns03.domaincontrol.com",
+            "ns04.domaincontrol.com"
           ]
         },
         "comparedTo": "previous",
@@ -68,12 +68,12 @@
       "id": "github",
       "label": "GitHub",
       "domain": "github.com",
-      "worst": "ok",
+      "worst": "warn",
       "ssl": {
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 63d",
-        "checkedAt": "2026-09-27T04:54:55.682Z",
+        "checkedAt": "2026-09-27T11:49:30.909Z",
         "validTo": "2026-11-29T23:59:59.000Z",
         "daysRemaining": 63,
         "issuer": "Sectigo Limited",
@@ -88,7 +88,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 743d",
-        "checkedAt": "2026-09-27T04:54:55.682Z",
+        "checkedAt": "2026-09-27T11:49:30.909Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 743,
         "registrar": "MarkMonitor Inc.",
@@ -101,13 +101,13 @@
       },
       "dns": {
         "kind": "dns",
-        "level": "ok",
-        "message": "Stable since last check",
-        "checkedAt": "2026-09-27T04:54:55.682Z",
-        "recordHash": "dac075ac6f059016",
+        "level": "warn",
+        "message": "Records changed since last check (2 changes)",
+        "checkedAt": "2026-09-27T11:49:30.909Z",
+        "recordHash": "7799df95d22625b7",
         "records": {
           "A": [
-            "140.82.113.4"
+            "140.82.116.3"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -150,7 +150,10 @@
           ]
         },
         "comparedTo": "previous",
-        "drift": []
+        "drift": [
+          "+ A 140.82.116.3",
+          "- A 140.82.113.4"
+        ]
       }
     },
     {
@@ -162,7 +165,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 68d",
-        "checkedAt": "2026-09-27T04:54:55.871Z",
+        "checkedAt": "2026-09-27T11:49:31.029Z",
         "validTo": "2026-12-04T23:29:33.000Z",
         "daysRemaining": 68,
         "issuer": "Google Trust Services",
@@ -180,7 +183,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2335d",
-        "checkedAt": "2026-09-27T04:54:55.871Z",
+        "checkedAt": "2026-09-27T11:49:31.030Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2335,
         "registrar": "Cloudflare, Inc.",
@@ -198,7 +201,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-09-27T04:54:55.871Z",
+        "checkedAt": "2026-09-27T11:49:31.030Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
