@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-02T05:12:11.982Z",
-  "durationMs": 379,
+  "generatedAt": "2026-10-02T12:17:40.994Z",
+  "durationMs": 661,
   "summary": {
     "critical": 0,
-    "warn": 0,
-    "ok": 3,
+    "warn": 1,
+    "ok": 2,
     "unknown": 0
   },
   "targets": [
@@ -17,10 +17,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 180d",
-        "checkedAt": "2026-10-02T05:12:11.603Z",
+        "message": "Valid for 179d",
+        "checkedAt": "2026-10-02T12:17:40.333Z",
         "validTo": "2027-03-31T10:57:41.000Z",
-        "daysRemaining": 180,
+        "daysRemaining": 179,
         "issuer": "GoDaddy.com",
         "authorized": true,
         "authorizationError": null,
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 341d",
-        "checkedAt": "2026-10-02T05:12:11.635Z",
+        "checkedAt": "2026-10-02T12:17:40.361Z",
         "expiry": "2027-09-09T03:54:41.907Z",
         "daysRemaining": 341,
         "registrar": "GoDaddy.com, LLC",
@@ -48,16 +48,16 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-10-02T05:12:11.660Z",
+        "checkedAt": "2026-10-02T12:17:40.377Z",
         "recordHash": "fd2371b4f16bb98d",
         "records": {
-          "A": [
-            "13.248.213.45",
-            "76.223.67.189"
-          ],
           "NS": [
             "ns03.domaincontrol.com",
             "ns04.domaincontrol.com"
+          ],
+          "A": [
+            "13.248.213.45",
+            "76.223.67.189"
           ]
         },
         "comparedTo": "previous",
@@ -68,12 +68,12 @@
       "id": "github",
       "label": "GitHub",
       "domain": "github.com",
-      "worst": "ok",
+      "worst": "warn",
       "ssl": {
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 58d",
-        "checkedAt": "2026-10-02T05:12:11.859Z",
+        "checkedAt": "2026-10-02T12:17:40.636Z",
         "validTo": "2026-11-29T23:59:59.000Z",
         "daysRemaining": 58,
         "issuer": "Sectigo Limited",
@@ -88,7 +88,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 738d",
-        "checkedAt": "2026-10-02T05:12:11.860Z",
+        "checkedAt": "2026-10-02T12:17:40.636Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 738,
         "registrar": "MarkMonitor Inc.",
@@ -101,13 +101,13 @@
       },
       "dns": {
         "kind": "dns",
-        "level": "ok",
-        "message": "Stable since last check",
-        "checkedAt": "2026-10-02T05:12:11.860Z",
-        "recordHash": "f531674480e479f7",
+        "level": "warn",
+        "message": "Records changed since last check (2 changes)",
+        "checkedAt": "2026-10-02T12:17:40.636Z",
+        "recordHash": "3998203285a4af3b",
         "records": {
           "A": [
-            "140.82.114.4"
+            "140.82.114.3"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -118,6 +118,9 @@
             "ns-1707.awsdns-21.co.uk",
             "ns-421.awsdns-52.com",
             "ns-520.awsdns-01.net"
+          ],
+          "MX": [
+            "0 github-com.mail.protection.outlook.com"
           ],
           "TXT": [
             "00Dd0000000hHE0=1TBKg000000TN2r",
@@ -144,13 +147,13 @@
             "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o",
             "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f",
             "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.227.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
-          ],
-          "MX": [
-            "0 github-com.mail.protection.outlook.com"
           ]
         },
         "comparedTo": "previous",
-        "drift": []
+        "drift": [
+          "+ A 140.82.114.3",
+          "- A 140.82.114.4"
+        ]
       }
     },
     {
@@ -162,7 +165,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 63d",
-        "checkedAt": "2026-10-02T05:12:11.925Z",
+        "checkedAt": "2026-10-02T12:17:40.838Z",
         "validTo": "2026-12-04T23:29:33.000Z",
         "daysRemaining": 63,
         "issuer": "Google Trust Services",
@@ -180,7 +183,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2330d",
-        "checkedAt": "2026-10-02T05:12:11.926Z",
+        "checkedAt": "2026-10-02T12:17:40.839Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2330,
         "registrar": "Cloudflare, Inc.",
@@ -198,13 +201,9 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-10-02T05:12:11.926Z",
+        "checkedAt": "2026-10-02T12:17:40.839Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
-          ],
           "NS": [
             "ns3.cloudflare.com",
             "ns4.cloudflare.com",
@@ -215,6 +214,10 @@
           "AAAA": [
             "2606:4700::6810:84e5",
             "2606:4700::6810:85e5"
+          ],
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
