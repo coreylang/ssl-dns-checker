@@ -1,16 +1,4 @@
 {
   "schema": 1,
-  "alerts": [
-    {
-      "id": "github:dns:-2",
-      "targetId": "github",
-      "label": "GitHub",
-      "kind": "dns",
-      "threshold": -2,
-      "level": "warn",
-      "message": "Records changed since last check (2 changes)",
-      "firedAt": "2026-10-01T12:55:05.520Z",
-      "resolvedAt": "2026-10-01T22:33:38.848Z"
-    }
-  ]
+  "alerts": []
 }
