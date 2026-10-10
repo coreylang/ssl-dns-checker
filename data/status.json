@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-10T05:26:20.619Z",
-  "durationMs": 717,
+  "generatedAt": "2026-10-10T12:16:29.442Z",
+  "durationMs": 606,
   "summary": {
     "critical": 0,
     "warn": 1,
@@ -17,10 +17,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 172d",
-        "checkedAt": "2026-10-10T05:26:19.902Z",
+        "message": "Valid for 171d",
+        "checkedAt": "2026-10-10T12:16:28.836Z",
         "validTo": "2027-03-31T10:57:41.000Z",
-        "daysRemaining": 172,
+        "daysRemaining": 171,
         "issuer": "GoDaddy.com",
         "authorized": true,
         "authorizationError": null,
@@ -32,7 +32,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 333d",
-        "checkedAt": "2026-10-10T05:26:19.937Z",
+        "checkedAt": "2026-10-10T12:16:28.857Z",
         "expiry": "2027-09-09T03:54:41.907Z",
         "daysRemaining": 333,
         "registrar": "GoDaddy.com, LLC",
@@ -48,16 +48,16 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-10-10T05:26:19.963Z",
+        "checkedAt": "2026-10-10T12:16:28.870Z",
         "recordHash": "fd2371b4f16bb98d",
         "records": {
-          "A": [
-            "13.248.213.45",
-            "76.223.67.189"
-          ],
           "NS": [
             "ns03.domaincontrol.com",
             "ns04.domaincontrol.com"
+          ],
+          "A": [
+            "13.248.213.45",
+            "76.223.67.189"
           ]
         },
         "comparedTo": "previous",
@@ -73,7 +73,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 50d",
-        "checkedAt": "2026-10-10T05:26:20.263Z",
+        "checkedAt": "2026-10-10T12:16:29.132Z",
         "validTo": "2026-11-29T23:59:59.000Z",
         "daysRemaining": 50,
         "issuer": "Sectigo Limited",
@@ -88,7 +88,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 730d",
-        "checkedAt": "2026-10-10T05:26:20.263Z",
+        "checkedAt": "2026-10-10T12:16:29.132Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 730,
         "registrar": "MarkMonitor Inc.",
@@ -103,11 +103,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-10-10T05:26:20.263Z",
-        "recordHash": "8f006e600b80afb1",
+        "checkedAt": "2026-10-10T12:16:29.132Z",
+        "recordHash": "58c907ee5f377212",
         "records": {
           "A": [
-            "20.29.134.23"
+            "140.82.112.3"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -151,8 +151,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 20.29.134.23",
-          "- A 172.182.252.133"
+          "+ A 140.82.112.3",
+          "- A 20.29.134.23"
         ]
       }
     },
@@ -165,7 +165,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 55d",
-        "checkedAt": "2026-10-10T05:26:20.494Z",
+        "checkedAt": "2026-10-10T12:16:29.272Z",
         "validTo": "2026-12-04T23:29:33.000Z",
         "daysRemaining": 55,
         "issuer": "Google Trust Services",
@@ -183,7 +183,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2322d",
-        "checkedAt": "2026-10-10T05:26:20.495Z",
+        "checkedAt": "2026-10-10T12:16:29.273Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2322,
         "registrar": "Cloudflare, Inc.",
@@ -201,13 +201,9 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-10-10T05:26:20.495Z",
+        "checkedAt": "2026-10-10T12:16:29.273Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
-          "A": [
-            "104.16.132.229",
-            "104.16.133.229"
-          ],
           "NS": [
             "ns3.cloudflare.com",
             "ns4.cloudflare.com",
@@ -218,6 +214,10 @@
           "AAAA": [
             "2606:4700::6810:84e5",
             "2606:4700::6810:85e5"
+          ],
+          "A": [
+            "104.16.132.229",
+            "104.16.133.229"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
