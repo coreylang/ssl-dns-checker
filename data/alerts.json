@@ -2,6 +2,39 @@
   "schema": 1,
   "alerts": [
     {
+      "id": "thestatus-dev:ssl:-1",
+      "targetId": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "kind": "ssl",
+      "threshold": -1,
+      "level": "critical",
+      "message": "TLS error: getaddrinfo ENOTFOUND thestatus.dev",
+      "firedAt": "2026-10-21T11:33:43.703Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "thestatus-dev:domain:0",
+      "targetId": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "kind": "domain",
+      "threshold": 0,
+      "level": "critical",
+      "message": "Domain lapsed: pending delete, redemption period",
+      "firedAt": "2026-10-21T11:33:43.703Z",
+      "resolvedAt": null
+    },
+    {
+      "id": "thestatus-dev:dns:0",
+      "targetId": "thestatus-dev",
+      "label": "TheStatus.dev",
+      "kind": "dns",
+      "threshold": 0,
+      "level": "critical",
+      "message": "No DNS records resolved",
+      "firedAt": "2026-10-21T11:33:43.703Z",
+      "resolvedAt": null
+    },
+    {
       "id": "github:dns:-2",
       "targetId": "github",
       "label": "GitHub",
@@ -10,7 +43,7 @@
       "level": "warn",
       "message": "Records changed since last check (2 changes)",
       "firedAt": "2026-10-18T20:25:35.436Z",
-      "resolvedAt": null
+      "resolvedAt": "2026-10-21T11:33:43.867Z"
     }
   ]
 }
