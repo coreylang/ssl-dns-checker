@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:49:42.197Z",
+  "generatedAt": "2026-11-03T13:57:33.374Z",
   "summary": {
     "critical": 1,
     "warn": 1,
@@ -11,7 +11,7 @@
       "id": "thestatus-dev",
       "worst": "critical",
       "ssl": null,
-      "domain": -55,
+      "domain": -56,
       "dns": "critical"
     },
     {
