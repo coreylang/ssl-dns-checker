@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-07T21:40:19.760Z",
-  "durationMs": 671,
+  "generatedAt": "2026-11-08T05:38:40.359Z",
+  "durationMs": 516,
   "summary": {
     "critical": 1,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "critical",
         "message": "TLS error: getaddrinfo ENOTFOUND thestatus.dev",
-        "checkedAt": "2026-11-07T21:40:19.089Z",
+        "checkedAt": "2026-11-08T05:38:39.843Z",
         "validTo": null,
         "daysRemaining": null,
         "issuer": null,
@@ -30,9 +30,9 @@
         "kind": "domain",
         "level": "critical",
         "message": "Domain lapsed: pending delete, redemption period",
-        "checkedAt": "2026-11-07T21:40:19.113Z",
+        "checkedAt": "2026-11-08T05:38:39.873Z",
         "expiry": "2026-09-09T03:54:41.907Z",
-        "daysRemaining": -60,
+        "daysRemaining": -61,
         "registrar": "GoDaddy.com, LLC",
         "statuses": [
           "pending delete",
@@ -44,7 +44,7 @@
         "kind": "dns",
         "level": "critical",
         "message": "No DNS records resolved",
-        "checkedAt": "2026-11-07T21:40:19.129Z",
+        "checkedAt": "2026-11-08T05:38:39.895Z",
         "recordHash": "e3b0c44298fc1c14",
         "records": {},
         "comparedTo": "previous",
@@ -59,10 +59,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 81d",
-        "checkedAt": "2026-11-07T21:40:19.493Z",
+        "message": "Valid for 80d",
+        "checkedAt": "2026-11-08T05:38:40.143Z",
         "validTo": "2027-01-27T23:59:59.000Z",
-        "daysRemaining": 81,
+        "daysRemaining": 80,
         "issuer": "Sectigo Limited",
         "authorized": true,
         "authorizationError": null,
@@ -75,7 +75,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 701d",
-        "checkedAt": "2026-11-07T21:40:19.493Z",
+        "checkedAt": "2026-11-08T05:38:40.143Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 701,
         "registrar": "MarkMonitor Inc.",
@@ -90,11 +90,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-11-07T21:40:19.493Z",
-        "recordHash": "7799df95d22625b7",
+        "checkedAt": "2026-11-08T05:38:40.143Z",
+        "recordHash": "f531674480e479f7",
         "records": {
           "A": [
-            "140.82.116.3"
+            "140.82.114.4"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -138,8 +138,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.116.3",
-          "- A 140.82.114.4"
+          "+ A 140.82.114.4",
+          "- A 140.82.116.3"
         ]
       }
     },
@@ -151,10 +151,10 @@
       "ssl": {
         "kind": "ssl",
         "level": "ok",
-        "message": "Valid for 86d",
-        "checkedAt": "2026-11-07T21:40:19.634Z",
+        "message": "Valid for 85d",
+        "checkedAt": "2026-11-08T05:38:40.243Z",
         "validTo": "2027-02-01T23:47:08.000Z",
-        "daysRemaining": 86,
+        "daysRemaining": 85,
         "issuer": "Google Trust Services",
         "authorized": true,
         "authorizationError": null,
@@ -169,10 +169,10 @@
       "domain_": {
         "kind": "domain",
         "level": "ok",
-        "message": "Renews in 2294d",
-        "checkedAt": "2026-11-07T21:40:19.634Z",
+        "message": "Renews in 2293d",
+        "checkedAt": "2026-11-08T05:38:40.243Z",
         "expiry": "2033-02-17T22:07:54.000Z",
-        "daysRemaining": 2294,
+        "daysRemaining": 2293,
         "registrar": "Cloudflare, Inc.",
         "statuses": [
           "client delete prohibited",
@@ -188,7 +188,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-11-07T21:40:19.634Z",
+        "checkedAt": "2026-11-08T05:38:40.243Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
