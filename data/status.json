@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-11-09T05:48:02.362Z",
-  "durationMs": 486,
+  "generatedAt": "2026-11-09T15:52:24.128Z",
+  "durationMs": 711,
   "summary": {
     "critical": 1,
     "warn": 1,
@@ -18,7 +18,7 @@
         "kind": "ssl",
         "level": "critical",
         "message": "TLS error: getaddrinfo ENOTFOUND thestatus.dev",
-        "checkedAt": "2026-11-09T05:48:01.876Z",
+        "checkedAt": "2026-11-09T15:52:23.417Z",
         "validTo": null,
         "daysRemaining": null,
         "issuer": null,
@@ -30,7 +30,7 @@
         "kind": "domain",
         "level": "critical",
         "message": "Domain lapsed: pending delete, redemption period",
-        "checkedAt": "2026-11-09T05:48:01.908Z",
+        "checkedAt": "2026-11-09T15:52:23.440Z",
         "expiry": "2026-09-09T03:54:41.907Z",
         "daysRemaining": -62,
         "registrar": "GoDaddy.com, LLC",
@@ -44,7 +44,7 @@
         "kind": "dns",
         "level": "critical",
         "message": "No DNS records resolved",
-        "checkedAt": "2026-11-09T05:48:01.931Z",
+        "checkedAt": "2026-11-09T15:52:23.457Z",
         "recordHash": "e3b0c44298fc1c14",
         "records": {},
         "comparedTo": "previous",
@@ -60,7 +60,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 79d",
-        "checkedAt": "2026-11-09T05:48:02.127Z",
+        "checkedAt": "2026-11-09T15:52:23.893Z",
         "validTo": "2027-01-27T23:59:59.000Z",
         "daysRemaining": 79,
         "issuer": "Sectigo Limited",
@@ -75,7 +75,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 700d",
-        "checkedAt": "2026-11-09T05:48:02.127Z",
+        "checkedAt": "2026-11-09T15:52:23.894Z",
         "expiry": "2028-10-09T18:20:50.000Z",
         "daysRemaining": 700,
         "registrar": "MarkMonitor Inc.",
@@ -90,11 +90,11 @@
         "kind": "dns",
         "level": "warn",
         "message": "Records changed since last check (2 changes)",
-        "checkedAt": "2026-11-09T05:48:02.127Z",
-        "recordHash": "58c907ee5f377212",
+        "checkedAt": "2026-11-09T15:52:23.894Z",
+        "recordHash": "8f006e600b80afb1",
         "records": {
           "A": [
-            "140.82.112.3"
+            "20.29.134.23"
           ],
           "NS": [
             "dns1.p08.nsone.net",
@@ -138,8 +138,8 @@
         },
         "comparedTo": "previous",
         "drift": [
-          "+ A 140.82.112.3",
-          "- A 140.82.114.3"
+          "+ A 20.29.134.23",
+          "- A 140.82.112.3"
         ]
       }
     },
@@ -152,7 +152,7 @@
         "kind": "ssl",
         "level": "ok",
         "message": "Valid for 84d",
-        "checkedAt": "2026-11-09T05:48:02.260Z",
+        "checkedAt": "2026-11-09T15:52:24.002Z",
         "validTo": "2027-02-01T23:47:08.000Z",
         "daysRemaining": 84,
         "issuer": "Google Trust Services",
@@ -170,7 +170,7 @@
         "kind": "domain",
         "level": "ok",
         "message": "Renews in 2292d",
-        "checkedAt": "2026-11-09T05:48:02.260Z",
+        "checkedAt": "2026-11-09T15:52:24.003Z",
         "expiry": "2033-02-17T22:07:54.000Z",
         "daysRemaining": 2292,
         "registrar": "Cloudflare, Inc.",
@@ -188,7 +188,7 @@
         "kind": "dns",
         "level": "ok",
         "message": "Stable since last check",
-        "checkedAt": "2026-11-09T05:48:02.260Z",
+        "checkedAt": "2026-11-09T15:52:24.003Z",
         "recordHash": "8bf79b54e9e5451e",
         "records": {
           "NS": [
@@ -198,13 +198,13 @@
             "ns6.cloudflare.com",
             "ns7.cloudflare.com"
           ],
-          "AAAA": [
-            "2606:4700::6810:84e5",
-            "2606:4700::6810:85e5"
-          ],
           "A": [
             "104.16.132.229",
             "104.16.133.229"
+          ],
+          "AAAA": [
+            "2606:4700::6810:84e5",
+            "2606:4700::6810:85e5"
           ],
           "MX": [
             "10 mxa.global.inbound.cf-emailsecurity.net",
